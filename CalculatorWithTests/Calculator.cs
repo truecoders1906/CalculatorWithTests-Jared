@@ -22,8 +22,17 @@ namespace CalculatorWithTests
         public int Factorial(int number)
         {
             int result = number;
+            if (result == 0)
+            {
+                return 1;
+            }
+            else if (number < 0)
+            {
+                return 0;
+            }
             for (int i = 1; i < number; i++)
             {
+               
                 result = result * i;
             }
             return result;
